@@ -1,0 +1,11 @@
+name: beton
+version: '0.1'
+main: name.modid.beton.Beton
+api-version: '1.21'
+authors: [ _Uki ]
+description: А тут нихуя нет. Или все же есть?
+permissions:
+  QB.admin:
+    description: none
+    default: op
+folia-supported: true
