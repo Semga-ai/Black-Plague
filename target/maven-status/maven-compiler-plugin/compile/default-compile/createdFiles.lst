@@ -8,10 +8,10 @@ name\modid\beton\Beton.class
 name\modid\beton\command\DBCommand.class
 name\modid\beton\storage\service\repository\IUserRepository.class
 name\modid\beton\storage\logic\model\User.class
-name\modid\beton\storage\logic\utilit\Check.class
 name\modid\beton\storage\service\repository\ItemRepository.class
 name\modid\beton\storage\logic\manager\GlobalTask.class
 name\modid\beton\storage\logic\service\ItemService.class
+name\modid\beton\storage\logic\utils\Check.class
 name\modid\beton\storage\logic\service\EffectsService.class
 name\modid\beton\storage\service\repository\UserRepository.class
 name\modid\beton\storage\logic\service\CounterService.class

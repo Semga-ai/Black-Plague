@@ -3,6 +3,7 @@ package name.modid.beton.storage.logic.service;
 import name.modid.beton.storage.logic.utils.Check;
 import name.modid.beton.storage.service.repository.IItemsRepository;
 import org.bukkit.Bukkit;
+import org.bukkit.Particle;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -27,6 +28,7 @@ public class ItemService {
                     if (itemsRepository.contain(item.getItemStack().getType())) {
                         item.getScheduler().run(plugin,taskk -> {
                             if (Check.check(item.getLocation().clone().add(0,-1,0))) {
+                                item.getWorld().spawnParticle(Particle.CAMPFIRE_COSY_SMOKE,item.getLocation(),5);
                                 item.remove();
                             }
                         },null);
